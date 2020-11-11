@@ -10,8 +10,7 @@ class IterativeAI:
         self.maximum_time = time # seconds
 
     def choose_move(self, board):
-        # Figured out how to do this on Andrew Clark's answer on stack exchange
-        timeout = time.time() + self.maximum_time # in reality this won't suffice. I actually have to stop choose_move during its call.
+        timeout = time.time() + self.maximum_time # in reality this won't suffice. I actually have to stop choose_move during its call if I want to timer-limit the algorithm.
         best_move = None # the move to return
 
         self.AI.depth = 0
