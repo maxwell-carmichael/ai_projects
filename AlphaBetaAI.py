@@ -78,7 +78,6 @@ class AlphaBetaAI():
         # lowest immediate utilities first, so ascending
         piece_map = board.piece_map()
         moves = sorted(board.legal_moves, key = lambda x : self.material_sort_helper(board, piece_map, x))
-        # moves = board.legal_moves
 
         for move in moves:
             board.push(move) # make the move
@@ -156,23 +155,11 @@ class AlphaBetaAI():
         if move.to_square in piece_map:
             piece = piece_map[move.to_square]
 
-            if piece.piece_type == 2:
+            if piece.piece_type == 2:  # bishop same score as knight
                 return -3
             else:
                 return -piece.piece_type
 
-            # The above achieves the same as this (for our purposes):
-            # Note that taking a king is not a valid move because it will
-            # never occur.
-
-            # if piece.piece_type == 1:
-            #     return -1
-            # elif piece.piece_type == 2 or piece.piece_type == 3:
-            #     return -3
-            # elif piece.piece_type == 4:
-            #     return -5
-            # elif piece.piece_type == 5:
-            #     return -9
         else:
             return 0
 
@@ -196,7 +183,3 @@ if __name__ == '__main__':
     print(moves)
     print(ai.choose_move(board))
 
-
-
-
-# print(board.piece_map())
