@@ -131,27 +131,4 @@ class MinimaxAI():
 
         return heuristic
 
-if __name__ == '__main__':
-    # print("Take queen test")
-    # board = chess.Board()
-    # print(board)
-    # board.remove_piece_at(chess.parse_square("d2"))
-    # board.set_piece_at(chess.parse_square("d4"), chess.Piece(1, True))
-    # board.remove_piece_at(chess.parse_square("d8"))
-    # board.set_piece_at(chess.parse_square("e5"), chess.Piece(5, False))
-    # print(board)
-    # # board.set_piece_at(0, chess.Piece(6, True)) # white king
-    #
-    # ai = MinimaxAI()
-    # print(ai.choose_move(board))
 
-    # random test:
-    random.seed(17)
-
-    n = 20
-    while n > 0:
-        n-=1
-        print(random.choices([0,1], cum_weights = [0.1, 1]))
-    print("Done!")
-
-        # print(board.piece_map())
