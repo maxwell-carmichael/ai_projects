@@ -34,7 +34,6 @@ class ChessGame:
         column_labels = "\n----------------\na b c d e f g h\n"
         board_str =  str(self.board) + column_labels
 
-        # did you know python had a ternary conditional operator?
         move_str = "White to move" if self.board.turn else "Black to move"
 
         return board_str + "\n" + move_str + "\n"
