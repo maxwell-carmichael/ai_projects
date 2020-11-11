@@ -1,9 +1,7 @@
 ###### Maxwell Carmichael
-###### COSC.076.01 PA3
-###### Fall 2020
 
 ## Introduction
-In this programming assignment, we took a python chess package and created algorithms which, given a game board, returned the best possible move under computationally-limited restrictions. Overall, the algorithms I implemented were a success, in that no obviously irrational moves were taken, and intelligent pin opportunities and guaranteed checkmates were always acted upon.
+In this project, we took a python chess package and created algorithms which, given a game board, returned the best possible move under computationally-limited restrictions. Overall, the algorithms I implemented were a success, in that no obviously irrational moves were taken, and intelligent pin opportunities and guaranteed checkmates were always acted upon.
 
 ## Description
 #### Evaluation function
@@ -157,3 +155,8 @@ Although the utility does not increase, we can assume that at deeper depths the 
 
 ##### Other
 Although I have two testing functions, I mainly only used open_board(game) for bug/runtime detection and discussed it above, so I will not focus on it here. My other function, called black_checkmate(game) on the ChessGame object makes it so black (the AI) can checkmate in exactly three turns. This board setup is useful for ensuring the algorithm is functioning properly, and that it will always go for a checkmate if it sees one. As it turned out, I initially had my checkmate values reversed, so this was helpful in isolating the problem.
+
+Project for CS76 - Artificial Intelligence
+Professor Alberto Quattrini Li
+PA3: Chess
+
