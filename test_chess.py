@@ -1,6 +1,8 @@
 # Maxwell Carmichael, 10/10/2020, Modified from CS76 Material
 # pip3 install python-chess
 
+# Code for testing the algorithm, and playing the AI. 
+# To make a move, type from-square and to-square in console, no space. ex: e2e4 could be an opening move for white.
 
 import chess
 from RandomAI import RandomAI
